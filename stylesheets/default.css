@@ -1,0 +1,125 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto 100px;
+}
+
+.footer, .push {
+  height: 100px;
+}
+
+header {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+  background-color: teal;
+}
+
+header a {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  font-size: 1.5em;
+  font-style: bold;
+}
+
+header nav {
+  display: inline;
+  position: absolute;
+  right: 0px;
+  width: 35%;
+  height: 100px;
+}
+
+header img {
+  display: inline-block;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: #F0F8FF;
+}
+
+body {
+  background-color: DeepSkyBlue;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+main {
+  position: relative;
+  display: block;
+  top: 120px;
+  width: 60%;
+  margin: auto;
+  border: 2px solid purple;
+  border-radius: 25px;
+  padding: 25px;
+  background-color: GhostWhite;
+}
+
+main section {
+  display: inline;
+}
+
+main section article {
+  display: inline;
+  width: 55%;
+  float: right;
+  padding-right: 15px;
+}
+
+main section article div h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+main section article div p {
+  text-align: justify;
+}
+
+/* Footer CSS starts here*/
+
+footer {
+  position: absolute;
+  display: block;
+  bottom: 0px;
+  left: 0px;
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+  background-color: teal;
+}
+
+footer a {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  font-size: 1.5em;
+  font-style: bold;
+}
+
+footer nav {
+  display: inline;
+  position: absolute;
+  right: 0px;
+  width: 35%;
+  height: 100px;
+}
+
+footer img {
+  display: inline-block;
+}
