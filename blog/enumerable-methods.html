@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <head>
+    <title>Dan Andersen's Blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head>
+
+  <main>
+    <h1>Enumerable Methods in Ruby</h1>
+    <h2>A Beginner's Guide to the group_by method</h2>
+    <h4>11/2/2015</h4>
+
+    <section>
+      <h5>What are Enumerables</h5>
+        <p>
+          Enumerables are modules that function in conjunction with data structures like arrays [] and hashes {} in Ruby. They include methods that are pre-packaged and can be used on any data set that you want to manipulate. This means that you don't have to reinvent the wheel everytime you want to perform a common function on your data. As long as the class that you are trying to affect has its own ".each" method, Enumerables can tap into that the .each to perform a specific task on every element of a given data set in no-time flat! Well, not exaclty no-time, but it might as well be with the speed your programs will be running at when you learn to use these methods well. Some examples of these methods you may have seen before are: #map, #each, and #select
+
+        </p>
+      <h5>What is the group_by method<h5>
+        <p>
+          The enumerable method "group_by" runs a block of code and returns a hash containing groups made from your input array based on whatever you decide to group them by. In any case where you want to categorize data into smaller sub-sets or groups, this method will be very helpful to know.
+        </p>
+      <h5>How can I put this to good use?<h5>
+        <p>
+          Here is an example of the group_by method being used on an array of names:
+
+            > names = ["Jimmy", "Dan", "Joe", "Pete", "Tim"]
+            > names.group_by{|name| name.length}
+            => {5=>["Jimmy"], 3=>["Dan", "Joe", "Tim"], 4=>["Pete"]}
+
+          As you can see: the group_by Enumerable method has taken the names from our input array and grouped them by length. We could then use the ".sort" method to arrange them in order from shortest to longest or longest to shortest.
+        </p>
+
+      <hr>
+
+        <a id="ssba_twitter_share" href="http://twitter.com/share?url=http://dandersen2.github.io/index.html&amp;text=Tweet this article!" target="_blank"><img title="Twitter" class="ssba" alt="Twitter" src="../imgs/twitter.png"></a>
+        <a id="ssba_facebook_share" href="http://www.facebook.com/sharer.php?u=http://dandersen2.github.io/index.html" target="_blank"><img title="Facebook" class="ssba" alt="Facebook" src="../imgs/facebook.png"></a>
+        <a id="ssba_google_share" href="https://plus.google.com/share?url=http://dandersen2.github.io/index.html" target="_blank"><img title="Google+" class="ssba" alt="Google+" src="../imgs/google.png"></a>
+        <a id="ssba_linkedin_share" class="ssba_share_link" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://dandersen2.github.io/index.html" target="_blank"><img title="Linkedin" class="ssba" alt="LinkedIn" src="../imgs/linkedin.png"></a>
+        <a id="ssba_email_share" href="mailto:?Subject=Share this Article with a friend!&amp;Body= http://dandersen2.github.io/index.html"><img title="Email" class="ssba" alt="Email" src="../imgs/email.png"></a>
+
+        <!-- copy and paste as many sections as you want to add paragraphs -->
+    </section>
+  </main>
