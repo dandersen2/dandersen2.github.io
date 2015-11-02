@@ -1,0 +1,5 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Robocube Blog Homepage</title>
+    <style type="text/css">
