@@ -14,21 +14,22 @@
     <section>
       <h5>What are Enumerables</h5>
         <p>
-          Enumerables are modules that function in conjunction with data structures like arrays [] and hashes {} in Ruby. They include methods that are pre-packaged and can be used on any data set that you want to manipulate. This means that you don't have to reinvent the wheel everytime you want to perform a common function on your data. As long as the class that you are trying to affect has its own ".each" method, Enumerables can tap into that the .each to perform a specific task on every element of a given data set in no-time flat! Well, not exaclty no-time, but it might as well be with the speed your programs will be running at when you learn to use these methods well. Some examples of these methods you may have seen before are: #map, #each, and #select
-
+          Enumerables are modules that function in conjunction with data structures like arrays [] and hashes {} in Ruby. They include methods that are pre-packaged and can be used on any data set that you want to manipulate. This means that you don't have to reinvent the wheel every time you want to perform a common function on your data. As long as the class that you are trying to affect has its own ".each" method, Enumerables can tap into that the .each to perform a specific task on every element of a given data set in no-time flat! Well, not exactly no-time, but it might as well be with the speed your programs will be running at when you learn to use these methods well. Some examples of these methods you may have seen before are: #map, #each, and #select
         </p>
-      <h5>What is the group_by method<h5>
+      <h5>What is the group_by method</h5>
         <p>
           The enumerable method "group_by" runs a block of code and returns a hash containing groups made from your input array based on whatever you decide to group them by. In any case where you want to categorize data into smaller sub-sets or groups, this method will be very helpful to know.
         </p>
-      <h5>How can I put this to good use?<h5>
+      <h5>How can I put this to good use?</h5>
         <p>
           Here is an example of the group_by method being used on an array of names:
-
+          <br>
+          <hr>
             > names = ["Jimmy", "Dan", "Joe", "Pete", "Tim"]
             > names.group_by{|name| name.length}
             => {5=>["Jimmy"], 3=>["Dan", "Joe", "Tim"], 4=>["Pete"]}
-
+          <br>
+          <hr>
           As you can see: the group_by Enumerable method has taken the names from our input array and grouped them by length. We could then use the ".sort" method to arrange them in order from shortest to longest or longest to shortest.
         </p>
 
