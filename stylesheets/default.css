@@ -75,6 +75,13 @@ main section {
   display: inline;
 }
 
+/*main section img {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  display: block;
+} */
+
 main section article {
   display: inline;
   width: 55%;
@@ -89,6 +96,13 @@ main section article div h2 {
 
 main section article div p {
   text-align: justify;
+}
+
+p.code_block {
+  background-color: black;
+  color: #7FFF00;
+  width: 40%;
+  /* margin: auto; */
 }
 
 /* Footer CSS starts here*/
