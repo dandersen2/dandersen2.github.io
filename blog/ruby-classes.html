@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+  <head>
+    <title>Dan Andersen's Blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head>
+
+  <main>
+    <h1>Classes in Ruby</h1>
+    <h2>A Beginner's Guide to class variables and methods</h2>
+    <h4>11/9/2015</h4>
+
+    <section>
+      <img src="../imgs/ruby-classes.jpg" alt="Rubies">
+      <h2>Week 6 Technical Blog Post</h2>
+      <p>
+        Here is an example of a Ruby class:
+      </p>
+      <pre>
+        <p class="code_block">
+          class FootballTeam
+            @@team_count = 0
+            @@team_list = []
+
+            def initialize(name)
+               @name = name
+               @@team_list << @name
+               @@team_count += 1
+            end
+
+            def self.team_count
+              @@team_count
+            end
+
+            def self.print_teams
+              @@team_list
+            end
+          end
+
+          FootballTeam.new("Patriots")
+          FootballTeam.new("Bengals")
+          FootballTeam.new("Giants")
+          FootballTeam.new("Raiders")
+          FootballTeam.new("Lions")
+          FootballTeam.new("49ers")
+
+          p FootballTeam.team_count
+          p FootballTeam.print_teams
+        </p>
+      </pre>
+      <p>
+        On the first line, we create our class object by using "class" followed by the name, starting with a capital letter. In the next two lines we are creating what are known as class variables. Class variables begin with "@@" followed by their name. Class variables can be used across any methods in the class as well as in any sub classes and in any instances of the class. Their use is generally frowned upon in Ruby because they act more like global variables and have a wide field of influence (known as scope). I have included them here just so that you are familiar with them. Instance variables on the other hand, such as  the @name variable in the initialize method, have a narrower scope but can still be used across all the methods within a class. Unlike the local variables we have seen so far in Ruby methods, instance variables allow your class methods to work together to solve a problem by communicating with each other.
+      </p>
+      <p>
+        The initialize method describes what will happen when an instance of our class is created. The initialize method is run on line 19 in "FootballTeam.new("Patriots")". This creates a new instance of the FootbalTeam class with the name "Patriots". Upon initializing with the .new command, the name is recorded into the instance variable @name, that @name variable is pushed into the @@team_list and the team_count is incremented by 1. All of that is accomplished by the code on line 19 because it is calling the class methods we created above.
+      </p>
+      <p>
+        The team_count and print_teams methods simply access the class variables @@team_count and @@team_list and return their values. The .self in front of the method name refers to what is known as the default object in Ruby. This is an important concept but for now self.team_count is equivalent to FootballTeam.team_count because in line 1 "self" is defined as FootballTeam. Each new instance of the class on lines 19-25 adds a team to the list and increments the count by one. When we call the team_count and print_teams class mehtods on the last two lines we should return "6" as the number of teams, and an array with all of the team names inside.
+      </p>
+      <hr>
+
+        <a id="ssba_twitter_share" href="http://twitter.com/share?url=http://dandersen2.github.io/index.html&amp;text=Tweet this article!" target="_blank"><img title="Twitter" class="ssba" alt="Twitter" src="../imgs/twitter.png"></a>
+        <a id="ssba_facebook_share" href="http://www.facebook.com/sharer.php?u=http://dandersen2.github.io/index.html" target="_blank"><img title="Facebook" class="ssba" alt="Facebook" src="../imgs/facebook.png"></a>
+        <a id="ssba_google_share" href="https://plus.google.com/share?url=http://dandersen2.github.io/index.html" target="_blank"><img title="Google+" class="ssba" alt="Google+" src="../imgs/google.png"></a>
+        <a id="ssba_linkedin_share" class="ssba_share_link" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://dandersen2.github.io/index.html" target="_blank"><img title="Linkedin" class="ssba" alt="LinkedIn" src="../imgs/linkedin.png"></a>
+        <a id="ssba_email_share" href="mailto:?Subject=Share this Article with a friend!&amp;Body= http://dandersen2.github.io/index.html"><img title="Email" class="ssba" alt="Email" src="../imgs/email.png"></a>
+
+        <!-- copy and paste as many sections as you want to add paragraphs -->
+    </section>
+  </main>
