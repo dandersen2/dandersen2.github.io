@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+  <head>
+    <title>Dan Andersen's Blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head>
+
+  <main>
+    <h1>Looping in Ruby vs. Looping in JavaScript</h1>
+    <h2>A Beginner's Guide to Iteration </h2>
+    <h4>11/17/2015</h4>
+
+    <section>
+      <img src="../imgs/Looping_Star.jpg" alt="Roller-coaster">
+      <h2>Week 7 Technical Blog Post</h2>
+      <p>
+        Loops are a common part of most programming language. This is because one of the obvious advantages of using computers is the speed with which they can perform calculations and processes. Using a loop allows a programmer to perform many such processes very quickly, but without having to write code for each one. The programming language can tell the computer what calculations it wants to do and then tell it to repeat this process for other numbers, variables, or any data that you might want to manipulate. This is known as iteration in programming and it has vast capabilities. Here is an example of a siple iteration in Ruby using the built-in .times method:
+        <pre>
+          <p class="code_block">
+            5.times {p "I love Ruby"}
+          </p>
+        </pre>
+        The output is the following:
+        <pre>
+          <p class="code_block">
+            "I love Ruby"<br>
+            "I love Ruby"<br>
+            "I love Ruby"<br>
+            "I love Ruby"<br>
+            "I love Ruby"<br>
+          </p>
+        </pre>
+        Likewise in Javascript we could perform the same type of iteration using slightly different syntax:
+      <pre>
+        <p class="code_block">
+          var n = 1;<br>
+          while (n <= 3) {<br>
+            console.log(“I love JavaScript!”);<br>
+            n += 1<br>
+          }<br>
+        </p>
+      </pre>
+        Which produces the following output:
+      <pre>
+        <p class="code_block">
+          "I love JavaScript"<br>
+          "I love JavaScript"<br>
+          "I love JavaScript"<br>
+        </p>
+      </pre>
+        As you can see, the code for looping in Javascript is a little more involved. Ruby also has a multitude of small and easy to use built-in methods that can be used to loop through data structures such as arrays and hashes. The .each, .map, and .inject methods in Ruby make it easy to loop through every element in a list. Arrays and Hashes are just lists in essence. They are known as data structures and can be used for holding large amounts of data of many different forms.
+      </p>
+      <p>
+        While JavaScript only has two keywords for making loops, don't assume that this limits the languages capability in any way. JavaScript uses the "for" and "while" methods. The "while" loop in JS is very similar to its counterpart in Ruby, with a few differences in syntax due simply to the way that code is written in each language. The overall function is the same. The for loop is useful for a certain number of times, like the .times method in Ruby. Here is an example:
+      </p>
+      <pre>
+        <p class="code_block">
+          for (var i = 0; i < 3; i++) { <br>
+            console.log(“I love JavaScript”)<br>
+          }"<br>
+        </p>
+      </pre>
+        This will produce the same text as above, repeated 3 times. Within the parentheses on the first line, the for loop accepts its parameters, or instructions, if you will. The first, "var i=0" is known as the "state". This defines the current state of the variable that you are iterating on. The second, "1 < 3" is the "condition". The condition defines when the iteration will stop running, which is important in order to avoid the dreaded infinite loop which will cause most programs to malfunction and produce an error. The third, "i++" is known as the "iterator". This describes how to change the variable after each iteration. In this particular example, the state is setting i equal to 0. The condition under which the for loop will end is when i is no longer less than 3. The Iterator i++ is the same as saying i += 1, or increasing i by 1, with each repetition. i Therefore starts at 0, prints "I love JavaScript", is incremented by 1 (to i=1), prints "I love JavaScript", is incremented by 1 (to i = 2) prints "I love JavaScript", is incremented by 1 to i = 3, which violates the condition of i < 3, and ends the loop. The result is the phrase "I love JavaScript" being printed 3 times.
+      <pre>
+        <p class="code_block">
+          "I love JavaScript"<br>
+          "I love JavaScript"<br>
+          "I love JavaScript"<br>
+        </p>
+      </pre>
+      <p>
+        As you can probably imagine, there is a lot more that can done with these tools than just printing out a message multiple times. You can perform simple or highly complicated calculations, conversions, or translations, depending on the data that you feed into the loop, and code that you instruct it to run on each iteration. The possibilities are practically endless.
+      <hr>
+
+        <a id="ssba_twitter_share" href="http://twitter.com/share?url=http://dandersen2.github.io/index.html&amp;text=Tweet this article!" target="_blank"><img title="Twitter" class="ssba" alt="Twitter" src="../imgs/twitter.png"></a>
+        <a id="ssba_facebook_share" href="http://www.facebook.com/sharer.php?u=http://dandersen2.github.io/index.html" target="_blank"><img title="Facebook" class="ssba" alt="Facebook" src="../imgs/facebook.png"></a>
+        <a id="ssba_google_share" href="https://plus.google.com/share?url=http://dandersen2.github.io/index.html" target="_blank"><img title="Google+" class="ssba" alt="Google+" src="../imgs/google.png"></a>
+        <a id="ssba_linkedin_share" class="ssba_share_link" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://dandersen2.github.io/index.html" target="_blank"><img title="Linkedin" class="ssba" alt="LinkedIn" src="../imgs/linkedin.png"></a>
+        <a id="ssba_email_share" href="mailto:?Subject=Share this Article with a friend!&amp;Body= http://dandersen2.github.io/index.html"><img title="Email" class="ssba" alt="Email" src="../imgs/email.png"></a>
+
+        <!-- copy and paste as many sections as you want to add paragraphs -->
+    </section>
+  </main>
