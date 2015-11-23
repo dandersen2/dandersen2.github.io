@@ -1,42 +1,42 @@
 RUBY QUICK REFERENCE GUIDE: by Dan Andersen
 
-#  METHOD:           -->          SYNTAX:                       -->           FUNCTION:
-#_________________________________________________________________________________________________
-#
-#  .each             -->          array.each{|x| ...}           -->           yields all elements
+  METHOD:           -->          SYNTAX:                       -->           FUNCTION:
+_________________________________________________________________________________________________
 
-#  .include?         -->          array.include?(value)         -->           returns true if any elements == value
+  .each             -->          array.each{|x| ...}           -->           yields all elements
 
-#  .map or .collect  -->          map/collect{|x| ...}          -->           returns an array with the results from block
+  .include?         -->          array.include?(value)         -->           returns true if any elements == value
 
-#  .each_with_index  -->          each_with_index{|x| ...}      -->           yields all elements with their associated indexes
+  .map or .collect  -->          map/collect{|x| ...}          -->           returns an array with the results from block
 
-#  .sort             -->          sort [{|a, b| …}]             -->           Returns array sorted by <=> operator or by block.
+  .each_with_index  -->          each_with_index{|x| ...}      -->           yields all elements with their associated indexes
+
+  .sort             -->          sort [{|a, b| …}]             -->           Returns array sorted by <=> operator or by block.
                                                                               Default block { |a, b| a <=> b }.
 
-#  .all?             -->          [a, b, c].all? {|letter| letter.length >= 3} #true
+  .all?             -->          [a, b, c].all? {|letter| letter.length >= 3} #true
                                                                 -->
                                                                               Passes each element of the collection to the given block. The method returns true if the block never returns false.
 
-#  .count            -->          ar1 = [1,2,4,3] ar1.count # = 4   -->       Returns the number of items in enum through
+  .count            -->          ar1 = [1,2,4,3] ar1.count # = 4   -->       Returns the number of items in enum through
                                                                               enumeration.
 
-#  .max              -->          max [{|a, b| ... }]               -->      Returns maximum element. Default
+  .max              -->          max [{|a, b| ... }]               -->      Returns maximum element. Default
                                                                              block { |a, b| a <=> b }.
 
-#  .min              -->          min [{|a, b| ... }]               -->      Returns minimum element. Default
+  .min              -->          min [{|a, b| ... }]               -->      Returns minimum element. Default
                                                                              block { |a, b| a <=> b }.
 
-# .find              -->          find_all { |x| … }                -->      Returns array of all elements where
+ .find              -->          find_all { |x| … }                -->      Returns array of all elements where
                                                                              block returns “true”.
 
-# .select            -->          select { |x| … }                  -->      Returns array of all elements where
+ .select            -->          select { |x| … }                  -->      Returns array of all elements where
                                                                              block returns “true”.
 
 
-#_________________________________________________________________________________________________
+_________________________________________________________________________________________________
 
-#Ranges -->
+Ranges -->
   1..10
   1...10
   'a'..'z'
@@ -46,11 +46,11 @@ RUBY QUICK REFERENCE GUIDE: by Dan Andersen
   (1...10) === 10  # false
   (1..10)  === 15  # false
 
-# Hashes:
+ Hashes:
   {1=>2, 2=>4, 3=>6}
   { key: val } == { :key => val }
 
-# Variables:
+ Variables:
   $global_variable
   @@class_variable
   @instance_variable
@@ -60,7 +60,7 @@ RUBY QUICK REFERENCE GUIDE: by Dan Andersen
   local_variable
 
 
-#_________________________________________________________________
+_________________________________________________________________
 Flow Control/Conditional Expressions:
 
     if bool-expr [then]
@@ -92,7 +92,7 @@ Flow Control/Conditional Expressions:
       body
     end
 
-# __________________________________________________________________________________
+__________________________________________________________________________________
 
 Reserved Words:
 
